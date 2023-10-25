@@ -9,6 +9,6 @@ services:
     image: ranjan715/springboot-with-mongodb:v11
     container_name: springboot-with-mongodb-container-one
     ports:
-      - 8090:8081
+      - 8080:8080
     links:
       - mongodb-container-one
