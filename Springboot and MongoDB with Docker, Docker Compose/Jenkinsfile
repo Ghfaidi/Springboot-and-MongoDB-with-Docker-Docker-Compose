@@ -1,0 +1,20 @@
+#!/usr/bin/env groovy
+
+def gv
+
+pipeline {
+    agent any
+    
+    tools {
+        maven 'maven'
+    }
+    stages {
+        stage("init") {
+            steps {
+                script {
+                    sh "ls"
+                }
+            }
+        }
+     }
+}
